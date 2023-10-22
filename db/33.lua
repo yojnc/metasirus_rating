@@ -1,0 +1,3 @@
+local addon, ns = ...
+if (ns.RATING_DATA) then else ns.RATING_DATA = {} end
+ns.RATING_DATA["Algalon x4 - 3.3.5a"] = {}

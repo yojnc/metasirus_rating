@@ -1,0 +1,10 @@
+## Interface: 30300
+## Author: YojNc
+## Version: 0.1.3
+## Notes: Данные о пве рейтинге персонажа с сайта metasirus.su
+
+db\9.lua
+db\33.lua
+db\42.lua
+db\57.lua
+Metasirus_Rating.lua
