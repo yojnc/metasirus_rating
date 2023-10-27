@@ -28,16 +28,19 @@ local function OnTooltipSetUnit(self)
   if not UnitIsPlayer(unit) then return end
 
   local realm = GetRealmName()
-  local text = "н/д"
+  local ratingText = "н/д"
+  local rangText = "н/д"
   local color = COLOR_MUTED
   if ratingData[realm] ~= nil then
     if ratingData[realm][unitName] ~= nil then
         local data = ratingData[realm][unitName]
         color = getColorByPercent(data[2])
-        text = data[1]
+        ratingText = data[1]
+        rangText = data[3]
     end
   end
-  GameTooltip:AddDoubleLine("ПВЕ Рейтинг:", coloredText(text, color));
+  GameTooltip:AddDoubleLine("ПВЕ Рейтинг:", coloredText(ratingText, color));
+  GameTooltip:AddDoubleLine("ПВЕ Ранг:", coloredText(rangText, color));
 end
 
 GameTooltip:HookScript("OnTooltipSetUnit", OnTooltipSetUnit)
