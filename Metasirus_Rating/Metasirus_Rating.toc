@@ -1,6 +1,6 @@
 ## Interface: 30300
 ## Author: YojNc
-## Version: 0.2.12
+## Version: 0.2.13
 ## Notes: Данные о пве рейтинге персонажа с сайта metasirus.su
 
 db\9.lua
